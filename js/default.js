@@ -3,7 +3,7 @@ var separate_time = function(time){
   var min    = time.getMinutes();
   var hours  = time.getHours();
   var days   = time.getDate();
-  return [sec, min, hours, days,]; }
+  return [sec, min, hours, days]; }
 
 var now = new Date();
 var counter = separate_time(now);

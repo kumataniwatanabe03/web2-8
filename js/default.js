@@ -5,14 +5,7 @@ var separate_time = function(time){
   var days   = time.getDate();
   var month  = time.getMonth();
   var year   = time.FullYear();
-  return [sec, min, hours, days, month, year];}
-
-var separate_time = function(time){
-  var sec   = Math.floor((time / 1000) % 60);
-  var min   = Math.floor((time / 1000 / 60) % 60);
-  var hours = Math.floor((time / 1000 / 60 / 60) % 24);
-  var days  = Math.floor(time / 1000 / 60 / 60 / 24);
-  return [sec, min, hours, days];}
+return [sec, min, hours, days, month, year];}
 
 var update = function(){
   var now = new Date();

@@ -19,7 +19,7 @@ var update = function(){
   refresh(); }
 
 var refresh= function(){
-  setTimeout(update, 1000); }
+  setTimeout(countup, 1000); }
 
 update();
  

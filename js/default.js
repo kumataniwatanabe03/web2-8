@@ -5,14 +5,10 @@ var separate_time = function(time){
   var days  = Math.floor(time / 1000 / 60 / 60 / 24);
   return [sec, min, hours, days];}
 
-var update = function(){
-  var now = new Date();
-  var target = new Date(2018,12,7,24,0,0,0,0);
-  var diff = target.getTime() - now.getTime();
-  var counter = separate_time(diff);
-  document.getElementById('countdown').textContent =
-    'スマブラ新作発売まであと' +
-    counter[3] + '日' +
-    counter[2] + '時間' +
-    counter[1] + '分' +
-    counter[0] + '秒';
+var now = new Date();
+var counter = separate_time(diff);
+document.getElementById('countdown').textContent =
+   counter[3] + '日' +
+   counter[2] + '時間' +
+   counter[1] + '分' +
+   counter[0] + '秒';

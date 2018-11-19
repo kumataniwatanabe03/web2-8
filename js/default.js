@@ -5,7 +5,6 @@ var separate_time = function(time){
   var days   = time.getDate();
 return [sec, min, hours, days,];}
 
-
 var now = new Date();
 var counter = separate_time(now);
 document.getElementById('countdown').textContent =

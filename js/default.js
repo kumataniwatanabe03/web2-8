@@ -10,7 +10,7 @@ var update = function(){
   var target = new Date(2018,12,7,24,0,0,0,0);
   var diff = target.getTime() - now.getTime();
   var counter = separate_time(diff);
-  socument.getElementById('countdown').textContent =
+  document.getElementById('countdown').textContent =
     'スマブラ新作発売まであと' +
     counter[3] + '日' +
     counter[2] + '時間' +

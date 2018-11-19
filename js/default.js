@@ -7,7 +7,7 @@ return [sec, min, hours, days,];}
 
 
 var now = new Date();
-var counter = separate_time(diff);
+var counter = separate_time(now);
 document.getElementById('countdown').textContent =
    counter[3] + '日' +
    counter[2] + '時間' +

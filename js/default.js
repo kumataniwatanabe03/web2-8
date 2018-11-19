@@ -19,8 +19,7 @@ var update = function(){
  refresh(); //タイマーを起動 }
 
 var refresh= function(){
-  setTimeout(update, 1000); //1000ミリ秒待ってからupdateを実行 }
+  setTimeout(update, 1000); }
 
-update(); //最初の更新
-
+update();
  
